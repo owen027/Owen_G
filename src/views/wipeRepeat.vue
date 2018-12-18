@@ -33,7 +33,7 @@ export default class About extends Vue {
     1,
     "6",
     3,
-    1
+    1,
   ];
 
   get repeat() {
@@ -47,9 +47,9 @@ export default class About extends Vue {
     // 利用indexOf方法 判断筛选元素在新数组中是否存在,不存在则将筛选元素添加到新数组中
   }
   get has() {
-    let obj: any = {},
-      arr = [],
-      len = this.msg.length;
+    const obj: any = {},
+      arr: any = [],
+      len: any = this.msg.length;
     for (let i = 0; i < len; i++) {
       // 如果hash表中没有当前项
       if (!obj[len[i]]) {
@@ -62,8 +62,8 @@ export default class About extends Vue {
     return arr;
   }
   get loop() {
-    const len = this.msg;
-    let arr = [];
+    const len: any = this.msg;
+    const arr: any = [];
     for (let i = 0; i < len.length; i++) {
       for (let j = i + 1; j < len.length; j++) {
         if (len[i] === len[j]) {
@@ -75,9 +75,9 @@ export default class About extends Vue {
     return arr;
   }
   get objFlag() {
-    let obj: any = {},
-      arr = [];
-    const len = this.msg;
+    const obj: any = {},
+      arr: any = [];
+    const len: any = this.msg;
     for (let i = 0; i < len.length; i++) {
       if (!obj[len[i]]) {
         obj[len[i]] = true;
@@ -87,8 +87,8 @@ export default class About extends Vue {
     return arr;
   }
   get index() {
-    let arr = [];
-    let len = this.msg;
+    const arr: any = [];
+    const len: any = this.msg;
     for (let i = 0; i < len.length; i++) {
       if (len.indexOf(len[i]) === len.lastIndexOf(len[i])) {
         arr.push(len[i]);
