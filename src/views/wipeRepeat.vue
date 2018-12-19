@@ -11,7 +11,7 @@
 </template>
 
 <script lang="ts">
-import { Component, Prop, Vue } from "vue-property-decorator";
+import { Component, Prop, Vue } from 'vue-property-decorator';
 
 @Component
 export default class About extends Vue {
@@ -24,16 +24,16 @@ export default class About extends Vue {
     4,
     NaN,
     5,
-    "3",
+    '3',
     NaN,
     3,
-    "3",
+    '3',
     2,
     2,
     1,
-    "6",
+    '6',
     3,
-    1,
+    1
   ];
 
   get repeat() {

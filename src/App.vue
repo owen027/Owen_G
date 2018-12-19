@@ -2,7 +2,8 @@
   <div id="app">
     <div id="nav">
       <router-link to="/">Home</router-link> |
-      <router-link to="/wipeRepeat">wipeRepeat</router-link>
+      <router-link to="/wipeRepeat">wipeRepeat</router-link> |
+        <router-link to="/throttling">wipeRepeat</router-link>
     </div>
     <router-view/>
   </div>
@@ -10,6 +11,8 @@
 
 <style lang="less">
 #app {
+  width: 100%;
+  height: 100%;
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
