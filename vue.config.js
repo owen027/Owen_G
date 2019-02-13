@@ -3,7 +3,7 @@ const resolve = (dir) => {
   return path.join(__dirname, '..', dir);
 }
 module.exports = {
-     baseUrl: '/',
+  publicPath: '/',
      outputDir: 'dist', //打包输出目录默认dist
   configureWebpack: config => {
     if (process.env.NODE_ENV === 'production') {

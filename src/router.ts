@@ -2,6 +2,8 @@ import Vue from 'vue';
 import Router from 'vue-router';
 import Home from './views/Home.vue';
 
+const throttling = () => import('./views/throttling.vue');
+const Node = () => import('./views/Dom/node.vue');
 Vue.use(Router);
 
 export default new Router({
@@ -22,7 +24,12 @@ export default new Router({
     {
       path: '/throttling',
       name: 'throttling',
-      component: () => import(/* webpackChunkName: "about" */ './views/throttling.vue'),
+      component: throttling,
+    },
+    {
+      path: '/node',
+      name: 'node',
+      component: Node,
     },
   ],
 });

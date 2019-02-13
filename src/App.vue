@@ -2,12 +2,14 @@
   <div id="app">
     <div id="nav">
       <router-link to="/">Home</router-link> |
-      <router-link to="/wipeRepeat">wipeRepeat</router-link> |
-        <router-link to="/throttling">wipeRepeat</router-link>
+      <router-link to="/wipeRepeat">arrDeduplication</router-link> |
+      <router-link to="/throttling">supportedEvents</router-link> |
+      <router-link to="/node">DOM</router-link>
+
     </div>
     <router-view/>
   </div>
-</template>
+</template> 
 
 <style lang="less">
 #app {
