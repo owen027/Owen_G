@@ -238,6 +238,7 @@
         <dt>attributes 属性</dt>
         <dd>每个元素都有attr</dd>
         <dd>他们保存再NamedNodeMap对象中 与NodeList 类似也是个伪数组</dd>
+        <dd>dataset 可以获取和设置自定义数据属性 <br> el.dataset.name 不用获取 data-  只需获取 - 后面的字段</dd>
       </dl>
       <h4>创建元素</h4>
       <ol>
@@ -263,6 +264,11 @@
               <span class="danger">el.classList.toggle('active')</span>
             </dd>
           </dl>
+          <h3>scorll滚动</h3>
+          <p> scrollIntoView() </p> <br/>
+           <p class="danger">
+             注意！如果一个元素绑定了事件，再将其元素从文档树中删除，对应的事件并没有被删除，这样会占用大量内存，所有删除DOM前应先解绑事件
+           </p>
       </div>
   </div>
 </template>
@@ -306,6 +312,7 @@ export default class DOM extends Vue {
 
   protected documentType: string = `document 是HTMLDocument（继承于Document） 的一个实列，表示整个HTML页面，同时还是window对象的一个属性，为全局对象`;
 }
+
 </script>
 <style lang='less' scoped>
 strong {

@@ -2,7 +2,6 @@
   <div class="home">
     <h3>{{name}}</h3>
     <HelloWorld :title.sync="name" msg="传入的prop值禁止在子组件中修改如需改变父组件中的数据要用$emit"/>
-    
   </div>
 </template>
 
@@ -12,8 +11,8 @@ import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
 
 @Component({
   components: {
-    HelloWorld
-  }
+    HelloWorld,
+  },
   // computed: {
   //   repeat() {
   //     return this.num + 1;

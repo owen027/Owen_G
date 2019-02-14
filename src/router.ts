@@ -4,6 +4,7 @@ import Home from './views/Home.vue';
 
 const throttling = () => import('./views/throttling.vue');
 const Node = () => import('./views/Dom/node.vue');
+const Fun = () => import('./views/dome/Function.vue');
 Vue.use(Router);
 
 export default new Router({
@@ -30,6 +31,10 @@ export default new Router({
       path: '/node',
       name: 'node',
       component: Node,
+    }, {
+      path: '/fun',
+      name: 'fun',
+      component: Fun,
     },
   ],
 });
